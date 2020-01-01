@@ -1,0 +1,40 @@
+using System;
+
+
+namespace Project_3
+{
+    public class Adder
+    {
+        public delegate void dgEventRaiser();
+        public event dgEventRaiser OnStringReplace;
+
+        public String strreplace(String str,String rep,String nrep)
+        {
+            String res;
+            res = str.Replace(rep, nrep);
+            OnStringReplace();
+            return res;
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            Adder a = new Adder();
+            a.OnStringReplace += new Adder.dgEventRaiser(a_OnStringReplace);
+
+            String iAnswer = a.strreplace("sohel","o","h");
+            Console.WriteLine("iAnswer = {0}", iAnswer);
+            String iAnswer1 = a.strreplace("Sohel","S","s");
+            Console.WriteLine("iAnswer = {0}", iAnswer1);
+            Console.ReadKey();
+        }
+
+        static void a_OnStringReplace()
+        {
+            Console.WriteLine("String Replace Occure");
+        }
+    }
+
+}

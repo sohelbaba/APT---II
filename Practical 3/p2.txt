@@ -1,0 +1,37 @@
+using System;
+
+//create a delegate for referencing 
+delegate String StrOperation(String str);
+
+namespace Project_3
+{
+    class Program
+    {
+        public static String Concate(String str)
+        {
+            String Greetings = "Hello";
+            String res = Greetings + " " + str;
+            return res;
+        }
+
+        public static String RevStr(String str)
+        {
+            char[] charArray = str.ToCharArray();
+            Array.Reverse(charArray);
+            //Console.WriteLine(charArray);
+            String res = new String(charArray);
+            return res;
+        }
+        static void Main(string[] args)
+        {
+            //.WriteLine("Hello World! This Program is using delegate reference");
+            StrOperation strop1 = new StrOperation(Concate);
+            String s = strop1("sohel");
+            Console.WriteLine(s);
+            StrOperation strop = new StrOperation(RevStr);
+            String s2 = strop("Hello");
+            Console.WriteLine(s2);
+            Console.ReadKey();
+        }
+    }
+}

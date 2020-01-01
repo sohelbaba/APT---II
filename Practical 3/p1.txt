@@ -1,0 +1,31 @@
+using System;
+
+//create a delegate for referencing 
+delegate void CalArea(float a, float b);
+
+namespace Project_3
+{
+    class Program
+    {
+        public static void RectArea(float a,float b)
+        {
+            float area = a * b;
+            Console.WriteLine("Area of Reactangle is {0} ",area);
+        }
+
+        public static  void TriArea(float a,float b)
+        {
+            double  area = 0.5 * a * b;
+            Console.WriteLine("Area of Tringle is {0} ", area);
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World! This Program is using delegate reference");
+            CalArea c = new CalArea(RectArea);
+            c(10, 20);
+            CalArea c1 = new CalArea(TriArea);
+            c1(12, 32);
+            Console.ReadKey();
+        }
+    }
+}
