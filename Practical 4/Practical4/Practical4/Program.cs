@@ -30,14 +30,24 @@ namespace Practical4
             Console.ReadKey();
             */
 
-            StackExample stack = new StackExample();
+            /*StackExample stack = new StackExample();
             stack.push(10);
             stack.push(20);
             stack.push(30);
             stack.push(40);
             stack.push(50);
             stack.showstack();
-            stack.pop();
+            stack.pop();    
+            */
+
+            QueueExample queue = new QueueExample();
+            queue.enqueue(10);
+            queue.enqueue(20);
+            queue.enqueue(30);
+            queue.enqueue(40);
+            queue.enqueue(50);
+            queue.show();
+            queue.dequeue();
             Console.ReadKey();
         }
     }
