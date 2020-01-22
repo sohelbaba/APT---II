@@ -1,0 +1,7 @@
+D:\MA021\Practical 4\Practical4\Practical4\bin\Debug\Practical4.exe.config
+D:\MA021\Practical 4\Practical4\Practical4\bin\Debug\Practical4.exe
+D:\MA021\Practical 4\Practical4\Practical4\bin\Debug\Practical4.pdb
+D:\MA021\Practical 4\Practical4\Practical4\obj\Debug\Practical4.csprojAssemblyReference.cache
+D:\MA021\Practical 4\Practical4\Practical4\obj\Debug\Practical4.csproj.CoreCompileInputs.cache
+D:\MA021\Practical 4\Practical4\Practical4\obj\Debug\Practical4.exe
+D:\MA021\Practical 4\Practical4\Practical4\obj\Debug\Practical4.pdb
