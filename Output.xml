@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Customers>
+    <Id>1</Id>
+    <name>samir</name>
+    <email>s@gmail.com</email>
+    <dob_x0020_>1998-12-12T00:00:00+05:30</dob_x0020_>
+    <mobile>123213123 </mobile>
+    <gender>Male</gender>
+    <password>123123</password>
+  </Customers>
+  <Customers>
+    <Id>2</Id>
+    <name>samir</name>
+    <email>s@gmail.com</email>
+    <dob_x0020_>1998-12-12T00:00:00+05:30</dob_x0020_>
+    <mobile>1456      </mobile>
+    <gender>Male</gender>
+    <password>7410</password>
+  </Customers>
+  <Customers>
+    <Id>3</Id>
+    <name>samir</name>
+    <email>s@gmail.com</email>
+    <dob_x0020_>1998-12-12T00:00:00+05:30</dob_x0020_>
+    <mobile>1456      </mobile>
+    <gender>Male</gender>
+    <password>7575786786786</password>
+  </Customers>
+  <Customers>
+    <Id>4</Id>
+    <name>samir</name>
+    <email>s@gmail.com</email>
+    <dob_x0020_>1998-12-12T00:00:00+05:30</dob_x0020_>
+    <mobile>2525353   </mobile>
+    <gender>Male</gender>
+    <password>41452452</password>
+  </Customers>
+  <Customers>
+    <Id>5</Id>
+    <name>mohit</name>
+    <email>m@gmail.com</email>
+    <dob_x0020_>2012-02-12T00:00:00+05:30</dob_x0020_>
+    <mobile>74858565  </mobile>
+    <gender>Male</gender>
+    <password>123456</password>
+  </Customers>
+  <Customers>
+    <Id>6</Id>
+    <name>Nisha</name>
+    <email>n@gmail.com</email>
+    <dob_x0020_>1998-01-10T00:00:00+05:30</dob_x0020_>
+    <mobile>47456952  </mobile>
+    <gender>Female</gender>
+    <password>741812</password>
+  </Customers>
+</NewDataSet>

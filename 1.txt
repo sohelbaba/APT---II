@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Xml;
+using System.Data;
+using System.IO;
+
+namespace XmlExample
+{
+    public partial class xmlExample : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True");
+            conn.Open();
+            SqlDataAdapter da = new SqlDataAdapter("Select * from register", conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Customers");
+            ds.WriteXml("E:\\MA021\\Output.xml");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //open the tender xml file  
+            XmlTextReader xmlreader = new XmlTextReader("E:\\MA021\\Output.xml");
+            //reading the xml data  
+            DataSet ds = new DataSet();
+            ds.ReadXml(xmlreader);
+            xmlreader.Close();
+            //if ds is not empty  
+            if (ds.Tables.Count != 0)
+            {
+                //Bind Data to gridview  
+                GridView1.DataSource = ds;
+                GridView1.DataBind();
+            }
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
